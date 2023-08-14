@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black ; //#f0f0f0
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #f9f9f9 ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-task {
+    display: flex;
+    align-items: centre  ;
+    margin-bottom: 25px;
+}
+
+.add-task input {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    border-bottom: 3px solid black; //#3498db;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.add-task button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black ; // #3498db;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.add-task button:hover {
+    background-color: #aaa ; // #2980b9; // for light blue
+}
+
+.task-lists {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.pending-tasks,
+.completed-tasks {
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black ;  //  #e74c3c; text color//maroon red ;
+    text-align: center;
+    background-color: #f39c12;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ccc ; // #2ecc71 ; //light blue ;
+    background-color: #3498db;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    margin-bottom: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+li:hover {
+    background-color: #d5dbdb;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-time {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.today {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.future {
+    background-color: #3498db;
+    color: #fff;
+}
